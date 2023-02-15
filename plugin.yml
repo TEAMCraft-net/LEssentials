@@ -1,8 +1,0 @@
-name: LEssentials
-version: 1.0
-main: de.lemcraft.essentials.main.Main
-commands:
-   gamemode:
-   fly:
-   tp:
-   vanish:
