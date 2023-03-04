@@ -1,0 +1,10 @@
+We are working on some new Updates:
+
+For the Extensions:
+   Firma:
+     - NPC Worker
+     - Translation
+
+For the Main Plugin:
+  - More Languages
+  - Secret (???)
