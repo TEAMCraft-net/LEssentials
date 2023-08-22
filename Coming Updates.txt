@@ -6,5 +6,4 @@ For the Extensions:
      - Translation
 
 For the Main Plugin:
-  - More Languages
   - Secret (???)
