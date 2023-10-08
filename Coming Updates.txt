@@ -6,4 +6,4 @@ For the Extensions:
      - Translation
 
 For the Main Plugin:
-  - Secret (???)
+  - Secret was made and comes with the v5.5 (Currently only avaiable for premium)
