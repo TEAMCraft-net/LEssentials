@@ -8,4 +8,5 @@ For the Main Plugin:
    - Bug fixes
    - Fresh and new commands
    - a special event
-   - more languages
+   - more languages DONE
+   - performance updates
