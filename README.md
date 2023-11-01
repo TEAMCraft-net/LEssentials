@@ -33,4 +33,6 @@ LuckPerms meaning it can change a users parent using the setgroup command.
 + Sell command fixed
 - Status command for users (Only for users in Admin Mode and the required permissions)
 + Better EventManager
++ SetSpawn command
++ Spawn command
 ```
