@@ -35,4 +35,5 @@ LuckPerms meaning it can change a users parent using the setgroup command.
 + Better EventManager
 + SetSpawn command
 + Spawn command
++ Teleport to Spawn on join (Toggable)
 ```
