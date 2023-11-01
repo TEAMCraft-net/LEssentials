@@ -37,4 +37,5 @@ LuckPerms meaning it can change a users parent using the setgroup command.
 - Already in Admin bug fix
 + Spawn command
 + Teleport to Spawn on join (Toggable)
+- Online Services changed
 ```
