@@ -6,6 +6,63 @@ This Plugin is a compact version of essentials, event system and job system.
 This Plugin also supports PlotSquared meaning the PlayerMenu is specially made for PlotSquared and it supports
 LuckPerms meaning it can change a users parent using the setgroup command.
 
+## **API**
+
+### Setup
+
+```java
+import org.bukkit.plugin.java.JavaPlugin;
+import de.lemcraft.essentials.api.API;
+
+public class Main extends JavaPlugin {
+
+	private static Main instance;
+  private static API api = null;
+
+  public static API getApi() {
+    return api;
+  }
+
+  public static Main getInstance() {
+		return instance;
+	}
+
+  public void onEnable() {
+		instance = this;
+    api = new API();
+  }
+
+}
+```
+
+### Usage
+
+```java
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+
+public class TestApi implements CommandExecutor {
+
+	@Override
+	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+		if (sender instanceof Player) {
+			Player player = (Player) sender;
+			if (Main.getApi().getPlayersAPI().isPlayerNew == false) {
+				Main.getApi().getPlayersAPI().changeIsNewState(player, Main.getInstance(), true);
+			} else {
+				player.sendMessage(Core.getLanguageText("noPerm", true, player));
+			}
+		} else {
+			sender.sendMessage(Core.getLanguageText("noPlayer", true, sender));
+		}
+		return false;
+	}
+
+}
+
+```
+
 ## **Changelog**
 
 ### 27.10.2023 - LEssentials v6
