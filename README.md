@@ -41,4 +41,5 @@ LuckPerms meaning it can change a users parent using the setgroup command.
 - Warp system bugs
 + Auto database tables creation
 - Provided sql file
++ Api improved
 ```
