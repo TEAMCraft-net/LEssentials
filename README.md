@@ -42,6 +42,7 @@ LuckPerms meaning it can change a users parent using the setgroup command.
 + Auto database tables creation
 - Provided sql file
 + Api improved
+- Jail Bug (reload plugin after /setjail)
 ```
 
 ## **API**
