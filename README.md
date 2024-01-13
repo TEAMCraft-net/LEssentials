@@ -10,7 +10,12 @@ LuckPerms meaning it can change a users parent using the setgroup command.
 
 ### 01.01.2024 - LEssentials v6.5
 ```diff
-+ Comming Soon
+- Warp config bug
+- Home config bug
++ Home TabCompleter
++ Warp TabCompleter
++ Economy updated
++ AI updated
 ```
 
 ### 27.10.2023 - LEssentials v6
