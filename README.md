@@ -10,6 +10,30 @@ LuckPerms meaning it can change a users parent using the setgroup command.
 
 ## 21.01.2024 - LEssentials v7.0
 ```diff
++ Rename Reworked
++ Sign Reworked
++ Give Reworked
++ Kick Reworked
++ Tphere Reworked
++ Feed Reworked
++ Clearchat Reworked
++ Heal Reworked
++ Tpall Reworked
++ Sudo Reworked
++ Msg Reworked
++ Thunder Reworked
++ Storm Reworked
++ Sun Reworked
++ Night  Reworked
++ Day Reworked
++ EnderChest Reworked
++ SpawnMob Reworked
+- Vanish Bugs
++ Vanish Reworked
++ GameMode Reworked
++ Tp Reworked
++ Fly Reworked
++ GameMode Reworked
 - Reload command
 - AI Integration (Temporary)
 + New Economy
