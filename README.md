@@ -8,6 +8,16 @@ LuckPerms meaning it can change a users parent using the setgroup command.
 
 ## **Changelog**
 
+## 21.01.2024 - LEssentials v7.0
+```diff
+- AI Integration (Temporary)
++ New Economy
++ Improved Performance
++ Reworked Commands
++ Reworked Configs
+- Removed Multiple Translation
+```
+
 ### 01.01.2024 - LEssentials v6.5
 ```diff
 + New fly method (/fly <speed> | /fly <target>)
