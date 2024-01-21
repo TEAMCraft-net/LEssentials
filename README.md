@@ -10,6 +10,10 @@ LuckPerms meaning it can change a users parent using the setgroup command.
 
 ## 21.01.2024 - LEssentials v7.0
 ```diff
++ Pay Reworked
+- Bank
++ Money Reworked
++ Balance/bal
 + Permissions Reworked
 + Broadcast Reworked
 + Pay Reworked
