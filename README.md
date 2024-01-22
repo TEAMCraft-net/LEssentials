@@ -10,7 +10,7 @@ LuckPerms meaning it can change a users parent using the setgroup command.
 
 ## 21.01.2024 - LEssentials v7.0
 ```diff
-+ Paid for Farming (Ores/Logs) [MySQL Only]
++ Paid for Farming (Ores/Logs)
 + Easter Eggs
 + Sallary reworked
 - Discord Integration
