@@ -8,6 +8,11 @@ LuckPerms meaning it can change a users parent using the setgroup command.
 
 ## **Changelog**
 
+## 04.02.2024 - LEssentials v7.5
+```diff
+- EnderChest Viewer Bug
+```
+
 ## 21.01.2024 - LEssentials v7.0
 ```diff
 + Admin log
