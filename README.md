@@ -10,6 +10,7 @@ LuckPerms meaning it can change a users parent using the setgroup command.
 
 ## 04.02.2024 - LEssentials v7.5
 ```diff
++ Stairs sit feature (Beta)
 - EnderChest Permission Bug
 + R command
 + Vanish indicator
