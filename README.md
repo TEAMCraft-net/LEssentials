@@ -8,6 +8,13 @@ LuckPerms meaning it can change a users parent using the setgroup command.
 
 ## **Changelog**
 
+## 23.02.2024 - LEssentials v8.0
+```diff
++ Translation Wiki
++ Multi Translation
+- Single Translation
+```
+
 ## 04.02.2024 - LEssentials v7.5
 ```diff
 + Better TabCompletion
