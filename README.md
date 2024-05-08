@@ -10,6 +10,8 @@ LuckPerms meaning it can change a users parent using the setgroup command.
 
 ## 08.05.2024 - LEssentials v8.0
 ```diff
++ Player Menu
++ Enhanced UserData
 + Hologram System (/createholo, /delholo)
 + Ban System (/tempban, /ban, /unban)
 + /craft
