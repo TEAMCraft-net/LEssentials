@@ -8,8 +8,10 @@ LuckPerms meaning it can change a users parent using the setgroup command.
 
 ## **Changelog**
 
-## 23.02.2024 - LEssentials v8.0
+## 08.05.2024 - LEssentials v8.0
 ```diff
+? Ban System in progress
++ /craft
 + Translation Wiki
 + Multi Translation
 - Single Translation
