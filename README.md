@@ -10,6 +10,7 @@ LuckPerms meaning it can change a users parent using the setgroup command.
 
 ## 08.05.2024 - LEssentials v8.0
 ```diff
+- MySQL bug
 + GetHolo Command
 - Wrong Date/Time stats (Friend System)
 + Friend System
