@@ -10,6 +10,7 @@ LuckPerms meaning it can change a users parent using the setgroup command.
 
 ## 08.05.2024 - LEssentials v8.0
 ```diff
++ Essentials-Home Import
 + Improved Chat Events (Answers and questions are now randomly made based on three categories (capital city of ???, write the word ??? as fast as possible, what is ? + ? / ? ... equal to?))
 - MySQL bug
 + GetHolo Command
