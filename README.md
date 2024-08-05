@@ -1,12 +1,14 @@
 # **LEssentials made by Isa**
 
 This Plugin is made for every server that wants the features of essentials but with some more features.
-This Plugin is a compact version of essentials, event system and job system.
-
-This Plugin also supports PlotSquared meaning the PlayerMenu is specially made for PlotSquared and it supports
-LuckPerms meaning it can change a users parent using the setgroup command.
 
 ## **Changelog**
+
+## 05.08.2024 - LEssentials v8.5
+```diff
++ Wartungs MOTD & Default MOTD (Configurable in Config)
+- Gift bug
+```
 
 ## 08.05.2024 - LEssentials v8.0
 ```diff
