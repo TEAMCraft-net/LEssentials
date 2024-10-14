@@ -2,6 +2,8 @@
 
 This Plugin is made for every server that wants the features of essentials but with some more features.
 
+**NET Services currently down**
+
 ## **Changelog**
 
 ## 05.08.2024 - LEssentials v8.5
