@@ -1,0 +1,185 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0; /* Light text */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+.navbar {
+    display: none;
+    background-color: #ff6600; /* Orange */
+    position: absolute;
+    top: 50px;
+    right: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+pre {
+    border-radius: 20px;
+}
+
+.navbar.active {
+    display: block;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #db5800; /* Darker orange on hover */
+}
+
+.hamburger {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+}
+
+.centered-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.homepage h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: #ff6600; /* Darker orange */
+}
+
+.description {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ff6600; /* Darker orange */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: #e65c00; /* Even darker orange */
+}
+
+h1, h2, h3 {
+    margin-top: 20px;
+    color: #ff6600; /* Darker orange */
+}
+
+.command, .category, .version {
+    background: #1E1E1E; /* Darker card background */
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+    padding: 20px;
+    max-width: 800px; /* Maximum width for cards */
+    width: 100%; /* Responsive width */
+}
+
+.command h2, .category h2, .version h2 {
+    margin: 0;
+    color: #ff6600; /* Darker orange */
+}
+
+.command-usage {
+    margin-top: 10px;
+}
+
+.changelog-item {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.changelog-item.added h3 {
+    color: #2bff00; /* Darker background for added */
+}
+
+.changelog-item.improved h3 {
+    color: #ffff00; /* Darker yellow for improved */
+}
+
+.changelog-item.deprecated h3 {
+    color: #9b9b9b; /* Darker gray for deprecated */
+}
+
+.changelog-item.removed h3 {
+    color: #ff0000; /* Darker red for removed */
+}
+
+.page-header {
+    background-color: #1E1E1E; /* Dark background for header */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    width: 100%; /* Full width */
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.page-header h2 {
+    margin: 5px 0 0 0;
+    font-size: 1.5em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Full width */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .homepage h1 {
+        font-size: 3em; /* Smaller font size on small screens */
+    }
+
+    .description {
+        font-size: 1.2em; /* Smaller description on small screens */
+    }
+
+    .button {
+        padding: 10px 20px; /* Smaller button padding */
+    }
+
+    .command, .category, .version {
+        padding: 15px; /* Smaller padding for cards */
+    }
+}

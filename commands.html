@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEssentials - Commands</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="wiki.html">Wiki</a></li>
+            <li><a href="commands.html">Commands</a></li>
+            <li><a href="changelog.html">Changelog</a></li>
+            <li><a href="https://github.com/TEAMCraft-net/LEssentials/releases">Download</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1>LEssentials</h1>
+        <h2>Commands</h2>
+    </header>
+
+    <main>
+        <section class="command">
+            <h2>GameMode</h2>
+            <p>Changes the gamemode of an player.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/gamemode &lt;0,1,2,3,creative,survival,adventure,spectator&gt; &lt;name&gt;</code></li>
+                    <li><code>/gm &lt;0,1,2,3,creative,survival,adventure,spectator&gt; &lt;name&gt;</code></li>
+                    <li><code>/gamemode &lt;0,1,2,3,creative,survival,adventure,spectator&gt;</code></li>
+                    <li><code>/gm &lt;0,1,2,3,creative,survival,adventure,spectator&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Fly</h2>
+            <p>Changes the players fly state.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/fly &lt;name&gt;</code></li>
+                    <li><code>/fly</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Teleport</h2>
+            <p>Teleports the player to another player.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/tp &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Vanish</h2>
+            <p>Hides the player from every player without the required permissions.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/vanish</code></li>
+                    <li><code>/v</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>SpawnMob</h2>
+            <p>Spawns a mob at the location the player is looking at.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/spawnmob &lt;mob&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>EnderChest</h2>
+            <p>Opens the enderchest of the player or another player</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/enderchest</code></li>
+                    <li><code>/ec</code></li>
+                    <li><code>/enderchest &lt;name&gt;</code></li>
+                    <li><code>/ec &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Time</h2>
+            <p>Sets the time to a pre set time.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/day</code></li>
+                    <li><code>/night</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Weather</h2>
+            <p>Sets the weather of the world to a pre set weather.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/sun</code> - sets the world to a Sunny day</li>
+                    <li><code>/storm</code> - sets the world to a Stormy day</li>
+                    <li><code>/thunder</code> - starts a thunder in the world</li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Message</h2>
+            <p>Sends a private message to a player.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/message &lt;name&gt; &lt;message..&gt;</code></li>
+                    <li><code>/msg &lt;name&gt; &lt;message..&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Sudo</h2>
+            <p>Forces another player to execute a specific command.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/sudo &lt;name&gt; &lt;command&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Teleport All</h2>
+            <p>Teleports every player to the executor.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/teleportall</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Heal</h2>
+            <p>Heals a player.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/heal</code></li>
+                    <li><code>/heal &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Clear Chat</h2>
+            <p>Clears the chat for every player.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/clearchat &lt;public,private&gt;</code></li>
+                    <li><code>/cc &lt;public,private&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Give</h2>
+            <p>Gives the player an item.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/give &lt;item&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Feed</h2>
+            <p>Feeds an player.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/feed</code></li>
+                    <li><code>/feed &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Teleport Here</h2>
+            <p>Teleports a player to the executor.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/teleporthere &lt;name&gt;</code></li>
+                    <li><code>/tphere &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Sign</h2>
+            <p>Engrave your autograph onto an item with your personalized message.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/sign &lt;message..&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Rename</h2>
+            <p>Rename an Item.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/rename &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Warp</h2>
+            <p>Warp yourself to an important place in the server.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/warp &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Warps</h2>
+            <p>See every important place in the server listed.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/warps</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Set Warp</h2>
+            <p>Set an important place of the server.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/setwarp &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Del Warp</h2>
+            <p>Remove an important place of the server.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/delwarp &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Home</h2>
+            <p>Teleport yourself to one of your homes</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/home &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Set Home</h2>
+            <p>Set one of your homes.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/sethome &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Del Home</h2>
+            <p>Delete one of your homes.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/delhome &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Broadcast</h2>
+            <p>Announce something to every player on the server.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/Broadcast &lt;message..&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Invsee</h2>
+            <p>Inspect other players inventories.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/invsee &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>God</h2>
+            <p>Make yourself invincible.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/god</code></li>
+                    <li><code>/god &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Trash</h2>
+            <p>Open your personal trashbin to throw away unwanted items.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/trash</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Pay</h2>
+            <p>Pay someone money.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/pay &lt;name&gt; &lt;amount&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Set Money</h2>
+            <p>Set someones money to a specific amount.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/setmoney &lt;name&gt; &lt;amount&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Money</h2>
+            <p>See your own or others current balance.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/money</code></li>
+                    <li><code>/balance</code></li>
+                    <li><code>/bal</code></li>
+                    <li><code>/money &lt;name&gt;</code></li>
+                    <li><code>/balance &lt;name&gt;</code></li>
+                    <li><code>/bal &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Sell</h2>
+            <p>Sell the item your holding for money.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/sell</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Buy</h2>
+            <p>Buy an item from the server.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/buy &lt;item&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Price</h2>
+            <p>Get the current price of an item</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/price &lt;item&gt;</code></li>
+                    <li><code>/price &lt;item&gt; &lt;amount&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Wartung</h2>
+            <p>Toggle the maintenance status of the server.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/wartung</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Event</h2>
+            <p>Host or Join an Event.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/event &lt;join,create,delete&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>TPA</h2>
+            <p>Request a teleport to a player.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/tpa &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>TPAccept</h2>
+            <p>Acceot a teleport request from a player.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/tpaccept</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>TPACancel</h2>
+            <p>Cancel a teleport request.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/tpacancel</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Reply</h2>
+            <p>Reply to a private message from a player.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/reply &lt;message..&gt;</code></li>
+                    <li><code>/r &lt;message..&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Undo Buy</h2>
+            <p>Undo a unwanted purchase from the server.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/undobuy</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Skull</h2>
+            <p>Get an head from a player.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/skull &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Craft</h2>
+            <p>Open your portable Crafting Table.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/craft</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Ban</h2>
+            <p>Ban a player.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/ban &lt;name&gt; &lt;reason&gt;</code></li>
+                    <li><code>/ban &lt;name&gt; custom &lt;reason&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>UnBan</h2>
+            <p>Unban a player.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/unban &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Tempban</h2>
+            <p>Temporarly ban a player.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/tempban &lt;name&gt; &lt;time&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Create Holo</h2>
+            <p>Create a hologram.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/createholo &lt;text..&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Delete Holo</h2>
+            <p>Delete a holo using its ID.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/delholo &lt;holoId&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Get Holo</h2>
+            <p>Get the nearest holo id.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/getholo</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Guild</h2>
+            <p>Use the LEssentials-Guild System.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/guild create &lt;name&gt;</code></li>
+                    <li><code>/guild &lt;menu,leave,delete&gt;</code></li>
+                    <li><code>/guild invite &lt;name&gt;</code></li>
+                    <li><code>/guild accept &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Gift</h2>
+            <p>Gift a player the item your holding.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/gift &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Open Gift</h2>
+            <p>Open the gift you got from a player.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/opengift</code></li>
+                </ul>
+            </div>
+        </section>
+        <section class="command">
+            <h2>Friends</h2>
+            <p>Use the LEssentials-Friends System.</p>
+            <div class="command-usage">
+                <h3>Usage:</h3>
+                <ul>
+                    <li><code>/friends list</code></li>
+                    <li><code>/friends &lt;accept,decline,request&gt; &lt;name&gt;</code></li>
+                    <li><code>/f list</code></li>
+                    <li><code>/f &lt;accept,decline,request&gt; &lt;name&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 LEssentials. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.getElementById('navbar');
+
+        hamburger.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

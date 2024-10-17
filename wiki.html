@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEssentials - Wiki</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
+</head>
+<body>
+    <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="wiki.html">Wiki</a></li>
+            <li><a href="commands.html">Commands</a></li>
+            <li><a href="changelog.html">Changelog</a></li>
+            <li><a href="https://github.com/TEAMCraft-net/LEssentials/releases">Download</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1>LEssentials</h1>
+        <h2>Wiki</h2>
+    </header>
+
+    <main>
+        <section class="category">
+            <h2>Economy</h2>
+            <div class="sub-category">
+                <h3>Integrated Economy</h3>
+                <p>This Plugin has its own economy system what requires a stable mysql connection.</p>
+                <p>Is no mysql connection available will the plugin automatically try to use the Vault Economy.</p>
+            </div>
+            <div class="sub-category">
+                <h3>Vault Economy</h3>
+                <p>The Plugin will automatically connect to this form of economy if the Integrated Economy wont work.</p>
+                <p>This Economy System will only work if the required plugin <b>Vault</b> is installed and enabled.</p>
+            </div>
+        </section>
+        <section class="category">
+            <h2>Commands</h2>
+            <div class="sub-category">
+                <h3>Amount</h3>
+                <p>This Plugin contains about 55 different commands.</p>
+            </div>
+            <div class="sub-category">
+                <h3>Essentials</h3>
+                <p>This Plugin has almost every command the Essentials plugin has.</p>
+            </div>
+            <div class="sub-category">
+                <h3>Additionals</h3>
+                <p>This Plugin also has commands replicated from other Plugins such as.</p>
+                <p>HolographicDisplays</p>
+                <p>GSit</p>
+                <p>Maintenance</p>
+                <p>Friends</p>
+            </div>
+        </section>
+        <section class="category">
+            <h2>Addons</h2>
+            <div class="sub-category">
+                <h3>Firma</h3>
+                <p>This Plugin connects to my Firma Plugin found on SpigotMC.</p>
+                <p>The Plugin manages the economic site of your business.</p>
+            </div>
+            <div class="sub-category">
+                <h3>ChestShop</h3>
+                <p>This Plugin connects to my ChestShop Plugin</p>
+                <p>This Plugin manages the economic site of your chest shop.</p>
+            </div>
+        </section>
+        <section class="category">
+            <h2>LAPI ~ LEssentialsAPI</h2>
+            <p>This is the integrated api that will be accessable for use for developers to easily manage LEssentials Systems via LAPI.</p>
+            <p>LAPI will be available as a standalone Plugin (API)</p>
+            <div class="sub-category">
+                <h3>API Installation</h3>
+                <p>Either the LEssentials Plugin will be added to your Buildpath of your plugin project or the standalone LAPI will be added.</p>
+            </div>
+            <div class="sub-category">
+                <h3>API Setup</h3>
+                <pre><code class="language-java">
+                    import org.bukkit.plugin.java.JavaPlugin;
+                    import de.isa.lessentials.api.LEssentialsAPI;
+                    
+                    public class Main extends JavaPlugin {
+                        
+                        private static LEssentialsAPI lapi;
+
+                        public static LEssentialsAPI getLApi() {
+                            
+                            return lapi;
+                        }
+                        
+                        public void onEnable() {
+                            lapi = new LEssentialsAPI(this);
+                        }
+                    }
+                    </code></pre>
+            </div>
+            <div class="sub-category">
+                <h3>API Features</h3>
+                <pre><code class="language-java">
+                    getLApi().getBanAPI()
+                    getLApi().getEconomyAPI()
+                    getLApi().getVaultEconomy()
+                    getLApi().getMuteAPI()
+                    getLApi().getGuildAPI()
+                    getLApi().getFriendsAPI()
+                    getLApi().getEventAPI()
+                    getLApi().getGiftAPI()
+                    getLApi().getHoloAPI()
+                    getLApi().getDiscordAPI()
+                    getLApi().getTranslationAPI()
+                    getLApi().getEssentialAPI()
+                    getLApi().getConfigAPI()
+                    </code></pre>
+            </div>
+            <div class="sub-category">
+                <h3>Essentials API</h3>
+                <pre><code class="language-java">
+                    public class TestCommand implements CommandExecutor {
+
+                        @Override
+                        public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+                            if (sender instanceof Player) {
+                                Player player = (Player) sender;
+                                if (Test.getLApi().isPlayerNew(player)) {
+                                    Test.getLApi().changePlayerData(player, "hasPlayed", true);
+                                } else {
+                                    player.sendMessage(Core.getLanguageText("noPerm", Core.getLanguage(player)));
+                                }
+                            } else {
+                                sender.sendMessage(Core.getLanguageText("noPlayer", Core.getLanguage(sender)));
+                            }
+                            return false;
+                        }
+                    
+                    }
+                </code></pre>
+            </div>
+            <div class="sub-category">
+                <h3>Discord API</h3>
+                <pre><code class="language-java">
+                    public class TestCommand implements CommandExecutor {
+
+                        @Override
+                        public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+                            Test.getLApi().getDiscordAPI().setWebhook("hereshouldbeyourwebhook");
+                            Test.getLApi().getDiscordAPI().sendMessageViaWebhook("This is a regular message in discord");
+                            Test.getLApi().getDiscordAPI().sendMessageViaWebhook("Title","This is a message with title in discord");
+                            return false;
+                        }
+                    
+                    }
+                </code></pre>
+            </div>
+            <div class="sub-category">
+                <h3>Config API</h3>
+                <pre><code class="language-java">
+                    public class TestCommand implements CommandExecutor {
+
+                        @Override
+                        public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+                            Test.getLApi().getConfigAPI().createConfig("config", Test.getInstance()); // The File type is automatically set by the API "config.json"
+                            Test.getLApi().getConfigAPI().getConfig().setDefaultValue("test.user",true);
+                            Test.getLApi().getConfigAPI().getConfig().setValue("test.user", false); //This is a boolean
+                            Test.getLApi().getConfigAPI().getConfig().getBoolean("test.user"); //getBoolean, getString, getInt, getLong etc. (for lists: getIntList, getStringList)
+                            Test.getLApi().getConfigAPI().getConfig().save();
+                            return false;
+                        }
+                    
+                    }
+                </code></pre>
+            </div>
+            <div class="sub-category">
+                <h3>Holo API</h3>
+                <pre><code class="language-java">
+                    public class TestCommand implements CommandExecutor {
+
+                        @Override
+                        public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+                            if (Core.isPlayer(sender, true)) { // CommandSender to identify and true for it needs to be a player (messages
+                                                                // are automatically sent via TranslationAPI)
+                                Player player = (Player) sender;
+                                if (Core.hasPermission(player, Core.getPermission("test.use"))) { // Same as player.hasPermission but sends
+                                                        // automatically messages if permissions
+                                                        // are not given via TranslationAPI
+                                    Test.getLApi().getHoloAPI().createHolo("Hello World!", player.getLocation());
+                                }
+                            }
+                            return false;
+                        }
+                    
+                    }
+                </code></pre>
+            </div>
+            <div class="sub-category">
+                <h3>Ban API</h3>
+                <pre><code class="language-java">
+                    public class TestCommand implements CommandExecutor {
+
+                        @Override
+                        public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+                            if (Core.isPlayer(sender, true)) { // CommandSender to identify and true for it needs to be a player (messages
+                                                                // are automatically sent via TranslationAPI)
+                                Player player = (Player) sender;
+                                if (Core.hasPermission(player, Core.getPermission("test.use"))) { // Same as player.hasPermission but sends
+                                                        // automatically messages if permissions
+                                                        // are not given via TranslationAPI
+                                    //This example is how u can ban urself via BanAPI
+                                    Test.getLApi().getBanAPI().banPlayer(player, BanReason.HACKING); // Using Enum BanReason
+                                    Test.getLApi().getBanAPI().banPlayer(player, "Hacking"); // Using Custom Reasons
+                                }
+                            }
+                            return false;
+                        }
+                    
+                    }
+                </code></pre>
+            </div>
+            <div class="sub-category">
+                <h3>Mute API</h3>
+                <pre><code class="language-java">
+                    public class TestCommand implements CommandExecutor {
+
+                        @Override
+                        public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+                            if (Core.isPlayer(sender, true)) { // CommandSender to identify and true for it needs to be a player (messages
+                                                                // are automatically sent via TranslationAPI)
+                                Player player = (Player) sender;
+                                if (Core.hasPermission(player, Core.getPermission("test.use"))) { // Same as player.hasPermission but sends
+                                                        // automatically messages if permissions
+                                                        // are not given via TranslationAPI
+                                    //This example is how u can ban urself via MuteAPI
+                                    Test.getLApi().getMuteAPI().mutePlayer(player);
+                                }
+                            }
+                            return false;
+                        }
+                    
+                    }
+                </code></pre>
+            </div>
+            <div class="sub-category">
+                <h3>Friends API</h3>
+                <pre><code class="language-java">
+                    public class TestCommand implements CommandExecutor {
+
+                        @Override
+                        public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+                            if (Core.isPlayer(sender, true)) { // CommandSender to identify and true for it needs to be a player (messages
+                                                                // are automatically sent via TranslationAPI)
+                                Player player = (Player) sender;
+                                if (Core.hasPermission(player, Core.getPermission("test.use"))) { // Same as player.hasPermission but sends
+                                                        // automatically messages if permissions
+                                                        // are not given via TranslationAPI
+                                    //This example is how u can friend urself via FriendsAPI
+                                    Test.getLApi().getFriendsAPI().sentFriendRequest(player, player); // Sending the request
+                                    Test.getLApi().getFriendsAPI().acceptFriendRequest(player, player); // Accepting the request
+                                }
+                            }
+                            return false;
+                        }
+                    
+                    }
+                </code></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 LEssentials. All rights reserved.</p>
+    </footer>
+
+    <script>
+        Prism.languages.java['spigot'] = /\b(Bukkit|Player|World|Location|ItemStack|Entity|Block|Material)\b/g;
+
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.getElementById('navbar');
+
+        hamburger.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+    <style>
+        .token.spigot {
+            color: #f28d1a; /* Minecraft Spigot orange color */
+            font-weight: bold;
+        }
+    </style>
+</body>
+</html>
