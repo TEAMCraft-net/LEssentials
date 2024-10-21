@@ -2,8 +2,6 @@
 
 This Plugin is made for every server that wants the features of essentials but with some more features.
 
-**NET Services currently down**
-
 ## **API**
 This is only a little preview of our API the entire usage is in the Wiki.
 
